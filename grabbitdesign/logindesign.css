@@ -1,0 +1,345 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#transparent {
+  width: 100%;
+  outline: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 0.7rem;
+}
+
+
+@media screen and(max-width:769px){
+  .email-tb {
+    width: 10%;
+    height: 42px;
+  }
+}
+@media screen and (max-width:500px){
+  .banner{
+    display: none;
+  }
+  .logmoto p{
+    margin-top: 3rem;
+  }
+  .recover-mo span {
+    font-size: 9px;
+    width:80%;
+    margin-bottom: 1rem;
+  }
+  
+}
+.login-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-container {
+  display: flex;
+  gap: 1.5rem;
+}
+.login-btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+.login-btn img {
+  height: 20px;
+  width: 20px;
+}
+.banner {
+  position: sticky;
+  left: 0;
+  width: 156px;
+  height: 100vh;
+  background: url(https://images.pexels.com/photos/5633723/pexels-photo-5633723.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logmoto {
+  margin-bottom: 3rem;
+}
+.logmoto p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+.logmoto span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.logmoto a {
+  color: #0079d3;
+  text-decoration: none;
+}
+.login-btn {
+  background-color: #fff;
+  color: #0079d3;
+  border: 1px solid #0079d3;
+  font-size: 14px;
+  height: 52px;
+  width: 280px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding-left: 3.5rem;
+}
+.login-btn:hover {
+  color: #ffff;
+  background: #0079d3;
+}
+.login-btn:hover a {
+  color: #fff;
+}
+.login-btn a {
+  text-decoration: none;
+  color: #0079d3;
+  font-weight: 600;
+}
+.login-btn-img-container {
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  position: absolute;
+  left: 1px;
+  top: 1.5px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+}
+.login-btn-img-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.line {
+  height: 1px;
+  width: 112px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.or-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+.or-container span {
+  color: grey;
+  font-size: 0.9rem;
+}
+.login-tb {
+  width: 280px;
+  height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #fcfcfb;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 11px;
+  font-weight: 600;
+  color: grey;
+  padding-left: 0.8rem;
+  position: relative;
+}
+
+.username-password-tb-container {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.8rem;
+}
+
+.login-tb:hover .login-tb-label {
+  font-size: 9px;
+  transform: translate(-5px, -10px);
+}
+.login-tb-label {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.login-btn-container input {
+  position: relative;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 32px;
+  color: #fff;
+
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  background: #0079d3;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: unset;
+  min-height: 35px;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 280px;
+  transition: background 200ms ease-in-out;
+}
+.login-btn-container input:hover {
+  background: #70bcf7;
+}
+.forgot-username-password-container {
+  font-size: 12px;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+.forgot-username-password-container a {
+  text-decoration: none;
+  color: #0079d3;
+}
+
+/* Sign up */
+#try {
+  font-size: 12px;
+}
+
+/* password */
+
+.passwords-container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.recover-mo p {
+  font-size: 18px;
+}
+.recover-mo span {
+  font-size: 14px;
+}
+.email-btn-container {
+  display: flex;
+}
+.email-tb {
+  width: 392px;
+  height: 42px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 32px;
+  color: grey;
+
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: unset;
+  min-height: 35px;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 280px;
+  transition: background 200ms ease-in-out;
+}
+.email-btn-container input {
+  font-size: 14px;
+  background: #0079d3;
+  color: #ffff;
+  width: 155px;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+.email-btn-container input:hover {
+  color: #ffff;
+  background: #88bfe9;
+}
+
+.email-tb span {
+  font-size: 12px;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.email-tb:hover .email-tb-label {
+  font-size: 9px;
+  transform: translate(-5px, -10px);
+}
+.dh-container a {
+  color: #0079d3;
+  text-decoration: none;
+}
+.loginsign-container {
+  font-size: 12px;
+  font-weight: 600px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+.loginsign-container a {
+  text-decoration: none;
+  color: #0079d3;
+}
+.dh-container {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.email-btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Recover username */
+.email-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 23%;
+}
+.logo-container img {
+  width: 40px;
+  height: 40px;
+}
+
+.forgot-user a {
+  width: 155px;
+  height: 35px;
+  font-size: 14px;
+  color: #0079d3;
+  text-decoration: none;
+}
+.forgot-user {
+  margin-bottom: 8px;
+  margin-top: 1px;
+}
